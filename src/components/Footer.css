@@ -1,0 +1,27 @@
+/* Footer.css */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 20px; /* Add margin at the top */
+  }
+  
+  footer div {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Add some margin to the Link elements */
+  footer a {
+    margin: 0 10px; /* Adjust the margin as needed */
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover for better user experience */
+  footer a:hover {
+    color: #bbb;
+  }
+  

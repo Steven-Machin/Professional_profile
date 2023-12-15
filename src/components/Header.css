@@ -1,0 +1,19 @@
+/* Header.css */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em; /* Add margin at the bottom */
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-link {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from links */
+}

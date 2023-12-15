@@ -1,0 +1,29 @@
+/* AboutMe.css */
+
+.about-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .about-content {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    max-width: 25%;
+    border-radius: 50%; /* Optional: Add a circular border */
+  }
+  
+  .about-links {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+  }
+  
