@@ -1,57 +1,81 @@
-// Resume.jsx
-
-import React from 'react';
-
 const Resume = () => {
   return (
     <div className="resume">
       <h2>Steven Machin</h2>
-      <p>Email: stmachin@gmail.com</p>
-      <p>Github: <a href="https://github.com/Steven-Machin">https://github.com/Steven-Machin</a></p>
+      <p>Email: <a href="mailto:stmachin@gmail.com">stmachin@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Steven-Machin" target="_blank" rel="noopener noreferrer">github.com/Steven-Machin</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/steven-machin-751690239" target="_blank" rel="noopener noreferrer">linkedin.com/in/steven-machin-751690239</a></p>
 
-      <h3>About Me</h3>
+      <h3>Professional Summary</h3>
       <p>
-        Full Stack Developer passionate about learning and implementing new things.
-        Enjoys solving problems and maintaining composure under pressure.
+        Results-driven operations leader and certified Full Stack Developer with over 10 years of experience in youth programming, aquatics operations, and team management. Proven record of leading departmental turnarounds, tracking KPIs, and driving performance improvements. Brings a strong foundation in leadership, safety compliance, and full stack web development using modern frameworks and tools.
       </p>
 
       <h3>Technical Skills</h3>
       <ul>
-        <li>HTML</li>
-        <li>Advanced CSS</li>
-        <li>JavaScript</li>
-        <li>Web APIs</li>
-        <li>Third Party APIs</li>
-        <li>Server Side APIs</li>
-        <li>Node.js</li>
-        <li>Object-Oriented Programming (OOP)</li>
-        <li>Express.js</li>
-        <li>SQL</li>
-        <li>ORM (Object-Relational Mapping)</li>
-        <li>MVC (Model-View-Controller)</li>
-        <li>Computer Science Fundamentals (CS)</li>
-        <li>NoSQL</li>
-        <li>Progressive Web Apps (PWA)</li>
-        <li>React</li>
-        <li>MERN Stack (MongoDB, Express.js, React, Node.js)</li>
+        <li><strong>Languages & Frameworks:</strong> JavaScript (ES6+), Python, Node.js, Express.js, React.js</li>
+        <li><strong>Database & ORM:</strong> MySQL, Sequelize, MongoDB, Mongoose</li>
+        <li><strong>Web & Tools:</strong> HTML5, CSS3, Tailwind, Bootstrap, REST APIs, JSON, AJAX</li>
+        <li><strong>Dev Tools:</strong> Git, GitHub, CLI, Postman, VS Code, Netlify, Heroku</li>
+        <li><strong>Project & Ops Skills:</strong> Financial tracking, KPI reporting, team training, schedule management</li>
+      </ul>
+
+      <h3>Work Experience</h3>
+      <ul>
+        <li>
+          <strong>Supervisor, Kids Academy & Aquatics – Life Time</strong><br />
+          Chicago, IL | Aug 2023 – Present
+          <ul>
+            <li>Leads operations across two departments, including staff scheduling, event planning, and certification tracking</li>
+            <li>Supports team leadership, safety oversight, and member experience across youth and aquatics programs</li>
+            <li>Drives growth by analyzing KPIs and supporting strategic planning with department leadership</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Aquatics Department Lead – Life Time</strong><br />
+          Chicago, IL | May 2021 – Aug 2023
+          <ul>
+            <li>Directed all staffing, financial, and programming operations for Aquatics department</li>
+            <li>Improved department connectivity ranking from bottom 50 to top 10 nationwide</li>
+            <li>Led internal audits, maintained compliance, and drove high-performing team culture</li>
+          </ul>
+        </li>
+        <li>
+<li>
+  <strong>Assistant Manager / – Life Time</strong><br />
+  Canton, MI → Chicago, IL | Apr 2018 – May 2021
+  <ul>
+    <li>Transferred to the high-performing Chicago market to support a $45,000/month Aquatics program</li>
+    <li>Managed scheduling, payroll, training, and performance tracking for a large aquatics team</li>
+    <li>Selected to assist a struggling Boston club and led a successful operational recovery during a critical summer season</li>
+  </ul>
+</li>
+
+        </li>
       </ul>
 
       <h3>Education</h3>
-      <p>Northwestern Bootcamp- Graduated January 2024 (Pending)</p>
+      <ul>
+        <li><strong>Full Stack Developer Certificate</strong> – Northwestern University | Jan 2024</li>
+        <li><strong>Associate of Arts</strong> – Washtenaw Community College | 2012–2014</li>
+        <li><strong>Psychology Studies</strong> – Ashland University | 2010–2012</li>
+      </ul>
 
-<h3>Projects</h3>
-<ul>
-  <li>
-    <strong>Movies and Mocktails</strong> - A web application for exploring movies and mocktail recipes.
-    [Link: <a href="https://mocktails-and-movie.github.io/Mocktails-and-Movies/">Mocktails and Movies</a>]
-  </li>
-  <li>
-    <strong>DND Character Generator</strong> - An online tool for generating Dungeons & Dragons characters.
-    [Link: <a href="https://dnd-character-generator-app-3900836cda13.herokuapp.com/">DND Character Generator</a>]
-  </li>
-  {/* Add more projects as needed */}
-</ul>
-
+      <h3>Projects</h3>
+      <ul>
+        <li>
+          <strong>Movies and Mocktails</strong> – A full stack app pairing movies with custom drink recipes<br />
+          <a href="https://mocktails-and-movie.github.io/Mocktails-and-Movies/" target="_blank" rel="noopener noreferrer">Live Site</a>
+        </li>
+        <li>
+          <strong>DND Character Generator</strong> – Custom character creation tool with backend hosting<br />
+          <a href="https://dnd-character-generator-app-3900836cda13.herokuapp.com/" target="_blank" rel="noopener noreferrer">Live Site</a>
+        </li>
+        <li>
+          <strong>Workday Scheduler</strong> – Daily planner app with local storage and dynamic UI<br />
+          <a href="https://steven-machin.github.io/workday_scheduler/" target="_blank" rel="noopener noreferrer">Live Site</a>
+        </li>
+      </ul>
     </div>
   );
 };

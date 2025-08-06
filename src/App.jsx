@@ -1,4 +1,3 @@
-// App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
@@ -11,12 +10,14 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Routes>
+      <main>
+        <Routes>
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/" element={<AboutMe />} />
       </Routes>
+      </main>
       <Footer />
     </Router>
   );

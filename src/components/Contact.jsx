@@ -1,6 +1,5 @@
-// components/Contact.jsx
-import React, { useState } from 'react';
-import './Contact.css'; // Import the Contact.css file
+import { useState } from 'react';
+import './Contact.css'; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,12 +15,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your logic for handling the form submission, such as sending an email or storing the data.
     console.log('Form submitted:', formData);
   };
 
   return (
-    <section className="contact-container"> {/* Use the contact-container class */}
+    <section className="contact-container">
       <h2>Contact</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
