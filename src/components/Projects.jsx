@@ -4,6 +4,7 @@ const Projects = () => {
       <h2>My Work</h2>
       <div className="project-grid">
 
+        {/* Weather Dashboard */}
         <div className="project-card">
           <img src="images/weather-dashboard.png" alt="Weather Dashboard" className="project-img" />
           <h3>Weather Dashboard</h3>
@@ -16,6 +17,7 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* Stock Logo Generator */}
         <div className="project-card">
           <img src="images/stock-logo.jpg" alt="Stock Logo Generator" className="project-img" />
           <h3>Stock Logo Generator</h3>
@@ -28,6 +30,7 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* Workday Scheduler */}
         <div className="project-card">
           <img src="images/Workday_Scheduler.png" alt="Workday Scheduler" className="project-img" />
           <h3>Workday Scheduler</h3>
@@ -36,6 +39,25 @@ const Projects = () => {
           </p>
           <div className="project-links">
             <a href="https://steven-machin.github.io/workday_scheduler/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </div>
+        </div>
+
+        {/*To Do Task Manager */}
+        <div className="project-card">
+          <img
+            src="images/todo-app-dashboard.png"
+            alt="Workday Dashboard"
+            className="project-img"
+          />
+          <h3> To Do Task Manager</h3>
+          <p>
+            A full-stack dashboard built with React and Node.js that combines task assignment,
+            reminders, group chat, overdue alerts, and team management into a single streamlined app.
+            Designed to help shift-based teams communicate clearly and stay organized.
+          </p>
+          <div className="project-links">
+            <a href="https://github.com/Steven-Machin/todo-list" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://your-live-link.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </div>
 
