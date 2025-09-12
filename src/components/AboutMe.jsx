@@ -40,6 +40,15 @@ const AboutMe = () => {
           <div className="about-links">
             <a href="https://github.com/Steven-Machin" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="mailto:stmachin@gmail.com">Email</a>
+            <a
+              href="/files/Steven_Machin_Resume_Final.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-download"
+            >
+              Download Resume
+            </a>
+
           </div>
         </div>
       </div>
