@@ -4,6 +4,36 @@ const Projects = () => {
       <h2>My Work</h2>
       <div className="project-grid">
 
+        {/* Financial Analyzer */}
+        <div className="project-card">
+          <img
+            src="images/Financial_anazlyer.png"
+            alt="Financial Analyzer"
+            className="project-img"
+          />
+          <h3>Financial Analyzer</h3>
+          <p>
+            A financial data analyzer that helps track trends, surface insights, and support faster
+            decision-making for investors and budget planners.
+          </p>
+          <div className="project-links">
+            <a
+              href="https://github.com/Steven-Machin/financial_analyzer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://financial-analyzer-kf5p.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          </div>
+        </div>
+
         {/* Weather Dashboard */}
         <div className="project-card">
           <img src="images/weather-dashboard.png" alt="Weather Dashboard" className="project-img" />
@@ -67,3 +97,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
