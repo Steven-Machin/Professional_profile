@@ -19,7 +19,7 @@ const Projects = () => {
           </p>
           <div className="project-links">
             <a href="https://github.com/Steven-Machin/finance-analyzer" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://finance-analyzer-render.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://financial-analyzer-kf5p.onrender.com/login" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </div>
 
