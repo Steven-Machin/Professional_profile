@@ -4,90 +4,40 @@ const Projects = () => {
       <h2>My Work</h2>
       <div className="project-grid">
 
-        {/* Financial Analyzer */}
+        {/* Personal Finance Analyzer */}
         <div className="project-card">
           <img
-            src="images/Financial_anazlyer.png"
-            alt="Financial Analyzer"
+            src="images/financial-analyzer.png"
+            alt="Personal Finance Analyzer"
             className="project-img"
           />
-          <h3>Financial Analyzer</h3>
+          <h3>Personal Finance Analyzer</h3>
           <p>
-            A financial data analyzer that helps track trends, surface insights, and support faster
-            decision-making for investors and budget planners.
+            A Python-based financial analyzer that ingests CSV bank data, categorizes spending, and
+            visualizes monthly trends. Features clean UI, secure local storage, and exportable
+            summaries.
           </p>
           <div className="project-links">
-            <a
-              href="https://github.com/Steven-Machin/financial_analyzer"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://financial-analyzer-kf5p.onrender.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
+            <a href="https://github.com/Steven-Machin/finance-analyzer" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://finance-analyzer-render.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </div>
 
-        {/* Weather Dashboard */}
-        <div className="project-card">
-          <img src="images/weather-dashboard.png" alt="Weather Dashboard" className="project-img" />
-          <h3>Weather Dashboard</h3>
-          <p>
-            An interactive weather dashboard that can find the weather anywhere in the world. It uses the OpenWeatherMap API and updates UI dynamically based on user input.
-          </p>
-          <div className="project-links">
-            <a href="https://github.com/Steven-Machin/WeatherDashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-          </div>
-        </div>
-
-        {/* Stock Logo Generator */}
-        <div className="project-card">
-          <img src="images/stock-logo.jpg" alt="Stock Logo Generator" className="project-img" />
-          <h3>Stock Logo Generator</h3>
-          <p>
-            A project showcasing a stock logo generator. Users can create custom logos with various styles and elements through a user-friendly interface.
-          </p>
-          <div className="project-links">
-            <a href="https://github.com/Steven-Machin/homeworkweekten" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
-          </div>
-        </div>
-
-        {/* Workday Scheduler */}
-        <div className="project-card">
-          <img src="images/Workday_Scheduler.png" alt="Workday Scheduler" className="project-img" />
-          <h3>Workday Scheduler</h3>
-          <p>
-            A simple workday scheduler application to help organize daily tasks. It saves events in local storage and adapts visually to the current time.
-          </p>
-          <div className="project-links">
-            <a href="https://steven-machin.github.io/workday_scheduler/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-          </div>
-        </div>
-
-        {/*To Do Task Manager */}
+        {/* Workday Task Manager */}
         <div className="project-card">
           <img
             src="images/todo-app-dashboard.png"
-            alt="Workday Dashboard"
+            alt="Workday Task Manager"
             className="project-img"
           />
-          <h3> To Do Task Manager</h3>
+          <h3>Workday Task Manager</h3>
           <p>
-            A full-stack dashboard built with React and Node.js that combines task assignment,
-            reminders, group chat, overdue alerts, and team management into a single streamlined app.
-            Designed to help shift-based teams communicate clearly and stay organized.
+            A full-stack dashboard built with React, Node.js, and MongoDB. Combines task assignment,
+            reminders, group chat, overdue alerts, and team management into one streamlined app.
           </p>
           <div className="project-links">
-            <a href="https://github.com/Steven-Machin/todo-list" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://your-live-link.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/Steven-Machin/workday-task-manager" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://todo-list-vram.onrender.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </div>
 
@@ -97,4 +47,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
