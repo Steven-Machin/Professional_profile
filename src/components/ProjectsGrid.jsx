@@ -5,74 +5,69 @@ const projects = [
     id: 'finance',
     title: 'Personal Finance Analyzer',
     img: '/images/financial-analyzer.png',
-    desc: 'A Python-based financial analyzer that ingests CSV bank data, categorizes spending, and visualizes monthly trends. Clean UI, secure local storage, exportable summaries.',
-    repo: 'https://github.com/Steven-Machin/finance-analyzer',
-    live: 'https://financial-analyzer-kf5p.onrender.com/login',
+    desc: 'A full personal finance platform that ingests banking CSVs, normalizes transactions, and automatically categorizes spending with customizable keyword rules. Delivers income/expense snapshots, category rollups, monthly trend analysis, merchant rankings, recurring charge detection, and budget comparisons in real time. Includes a Flask dashboard with authentication, CSV uploads, budget and category management, date/account/category filters, account-level summaries, Chart.js visualizations, and CSV/JSON exports. Persists data in SQLite via SQLAlchemy and ships with a CLI mode for quick terminal summaries and JSON output.',
+    repo: '#',
+    live: '#',
   },
   {
     id: 'workday',
     title: 'Workday Task Manager',
     img: '/images/todo-app-dashboard.png',
-    desc: 'A full-stack dashboard built with React, Node.js, and MongoDB. Combines task assignment, reminders, group chat, overdue alerts, and team management into one streamlined app.',
-    repo: 'https://github.com/Steven-Machin/workday-task-manager',
-    live: 'https://todo-list-vram.onrender.com',
+    desc: 'A role-aware team operations platform built with Flask and SQLAlchemy that centralizes task management, shift scheduling, and internal communication for small organizations. Includes assignment priorities, tags, notes, recurrence, drag-and-drop FullCalendar scheduling, threaded group chat, uploads, read tracking, shared task lists, badges, streaks, profile insights, and a built-in assistant for summaries and planning. Supports role-based navigation, dark/light themes, sound and notification preferences, email/Discord reminders via Celery/Redis, and secure persistence using SQLAlchemy with PostgreSQL or SQLite.',
+    repo: '#',
+    live: '#',
   },
   {
     id: 'nova-bot',
     title: 'Nova Discord Bot',
     img: '/images/Nova_bot.png',
-    desc: 'Modular Discord assistant with cog-based architecture for scalable commands. Community tools (points, leaderboards), moderation utilities, announcements, uptime monitoring, and robust error logging. Env-based config for smooth cloud deploys.',
-    repo: 'https://github.com/Steven-Machin/Nova_Discord_Bot',
+    desc: 'Modular Discord assistant with a cog-based architecture for scalable commands. Community tools (points, leaderboards), moderation utilities, announcements, uptime monitoring, and robust error logging. Environment-based configuration for smooth cloud deploys.',
+    repo: '#',
     live: '#',
+    fit: 'contain',
   },
 ];
 
-const ProjectsGrid = () => {
+export default function ProjectsGrid() {
   return (
     <section className="card section">
-      <h2 className="h2" style={{ marginBottom: 12 }}>
+      <h2 className="h2" style={{ marginBottom: 20 }}>
         My Work
       </h2>
+
       <div className={styles.grid}>
-        {projects.map((project) => (
-          <article key={project.id} className={`card ${styles.card}`}>
+        {projects.map((p) => (
+          <article key={p.id} className={styles.cardWrap}>
             <img
-              src={project.img}
-              alt={`${project.title} screenshot`}
-              className={styles.media}
+              src={p.img}
+              alt={`${p.title} screenshot`}
+              className={`${styles.media} ${p.fit === 'contain' ? styles.mediaContain : ''}`}
             />
-            <div className={styles.content}>
-              <h3 className={`h3 ${styles.title}`}>{project.title}</h3>
-              <p className={styles.desc}>{project.desc}</p>
-            </div>
+
+            <h3 className={styles.title}>{p.title}</h3>
+
+            <p className={styles.desc}>{p.desc}</p>
+
             <div className={styles.actions}>
-              {project.repo && (
+              {p.repo && (
                 <a
                   className="btn btn-ghost"
-                  href={project.repo}
+                  href={p.repo}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noreferrer"
                 >
                   View Repository
                 </a>
               )}
-              {project.live && project.live !== '#' ? (
+              {p.live && (
                 <a
                   className="btn btn-primary"
-                  href={project.live}
+                  href={p.live}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noreferrer"
                 >
                   Live Demo
                 </a>
-              ) : (
-                <span
-                  className="btn btn-ghost"
-                  aria-disabled="true"
-                  style={{ opacity: 0.6 }}
-                >
-                  Live Demo
-                </span>
               )}
             </div>
           </article>
@@ -80,6 +75,4 @@ const ProjectsGrid = () => {
       </div>
     </section>
   );
-};
-
-export default ProjectsGrid;
+}
