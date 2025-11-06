@@ -1,11 +1,11 @@
-import Projects from './Projects';
 import MainLayout from './MainLayout';
+import ProjectsGrid from './ProjectsGrid';
 
 const Portfolio = () => {
   return (
     <MainLayout>
       <div className="portfolio-container">
-        <Projects />
+        <ProjectsGrid />
       </div>
     </MainLayout>
   );
