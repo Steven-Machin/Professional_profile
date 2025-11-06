@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './Contact.css'; 
+import './Contact.css';
+import MainLayout from './MainLayout';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,46 +20,48 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-container container card">
-      <h2 className="h2">Contact</h2>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </div>
-        <div className="button-container">
-          <button type="submit" className="btn btn-primary">Submit</button>
-        </div>
-      </form>
-    </section>
+    <MainLayout>
+      <section className="contact-container card">
+        <h2 className="h2">Contact</h2>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+          </div>
+          <div className="button-container">
+            <button type="submit" className="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </section>
+    </MainLayout>
   );
 };
 

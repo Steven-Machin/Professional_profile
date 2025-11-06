@@ -1,10 +1,13 @@
-import Projects from './Projects'; 
+import Projects from './Projects';
+import MainLayout from './MainLayout';
 
 const Portfolio = () => {
   return (
-    <div className="portfolio-container">
-      <Projects />
-    </div>
+    <MainLayout>
+      <div className="portfolio-container">
+        <Projects />
+      </div>
+    </MainLayout>
   );
 };
 
