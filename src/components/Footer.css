@@ -1,28 +1,12 @@
-.site-footer {
-  margin-top: auto;
-  border-top: 1px solid var(--border);
-  background: rgba(15, 17, 21, 0.85);
-  backdrop-filter: saturate(120%) blur(10px);
+.footer-container {
+  padding-bottom: 32px;
 }
 
-.footer-inner {
+.footer-card {
   display: flex;
-  justify-content: center;
-  padding: 18px 24px;
-}
-
-.footer-links {
-  display: flex;
-  gap: 18px;
-  font-weight: 600;
-}
-
-.footer-link {
-  color: var(--muted);
-  transition: color 0.15s ease;
-}
-
-.footer-link:hover {
-  color: var(--text);
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 

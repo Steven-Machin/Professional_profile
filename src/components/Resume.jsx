@@ -4,9 +4,9 @@ import KeyCompetencies from './KeyCompetencies';
 const Resume = () => {
   return (
     <MainLayout>
-      <section className="resume card">
+      <section className="resume card section stack">
         <h2 className="h2">Steven Machin</h2>
-        <div className="resume-actions">
+        <div className="btn-row">
           <a href="mailto:stmachin@gmail.com" className="btn btn-ghost">Email</a>
           <a
             href="https://github.com/Steven-Machin"
@@ -44,17 +44,17 @@ const Resume = () => {
 
         <h3 className="h3">Technical Skills</h3>
         <ul>
-          <li><strong>Languages & Frameworks:</strong> JavaScript (ES6+), Python, Node.js, Express.js, React.js</li>
-          <li><strong>Database & ORM:</strong> MySQL, Sequelize, MongoDB, Mongoose</li>
-          <li><strong>Web & Tools:</strong> HTML5, CSS3, Tailwind, Bootstrap, REST APIs, JSON, AJAX</li>
+          <li><strong>Languages &amp; Frameworks:</strong> JavaScript (ES6+), Python, Node.js, Express.js, React.js</li>
+          <li><strong>Database &amp; ORM:</strong> MySQL, Sequelize, MongoDB, Mongoose</li>
+          <li><strong>Web &amp; Tools:</strong> HTML5, CSS3, Tailwind, Bootstrap, REST APIs, JSON, AJAX</li>
           <li><strong>Dev Tools:</strong> Git, GitHub, CLI, Postman, VS Code, Netlify, Heroku</li>
-          <li><strong>Project & Ops Skills:</strong> Financial tracking, KPI reporting, team training, schedule management</li>
+          <li><strong>Project &amp; Ops Skills:</strong> Financial tracking, KPI reporting, team training, schedule management</li>
         </ul>
 
         <h3 className="h3">Work Experience</h3>
         <ul>
           <li>
-            <strong>Supervisor, Kids Academy & Aquatics - Life Time</strong>
+            <strong>Supervisor, Kids Academy &amp; Aquatics - Life Time</strong>
             <br />
             Chicago, IL | Aug 2023 - Present
             <ul>
@@ -76,7 +76,7 @@ const Resume = () => {
           <li>
             <strong>Assistant Manager - Life Time</strong>
             <br />
-            Canton, MI -> Chicago, IL | Apr 2018 - May 2021
+            Canton, MI -&gt; Chicago, IL | Apr 2018 - May 2021
             <ul>
               <li>Transferred to the high-performing Chicago market to support a $45,000/month Aquatics program</li>
               <li>Managed scheduling, payroll, training, and performance tracking for a large aquatics team</li>

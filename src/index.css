@@ -17,13 +17,6 @@ main {
   gap: 32px;
 }
 
-.resume-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
 .project-grid {
   display: grid;
   gap: 28px;

@@ -2,7 +2,7 @@ import styles from './KeyCompetencies.module.css';
 
 const KeyCompetencies = () => {
   return (
-    <section className={`card ${styles.section}`}>
+    <section className={`card section ${styles.section}`}>
       <h2 className="h2">Key Competencies</h2>
 
       <div className={styles.grid}>
@@ -65,4 +65,3 @@ const KeyCompetencies = () => {
 };
 
 export default KeyCompetencies;
-

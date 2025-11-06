@@ -154,3 +154,43 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
+/* Vertical stack utility for consistent rhythm */
+.stack {
+  display: grid;
+  gap: var(--stack-gap, 24px);
+}
+
+/* Constrain line length for long paragraphs */
+.prose {
+  max-width: 68ch;
+}
+
+/* Section title breathing room */
+.section {
+  padding: 28px;
+}
+
+.section h1,
+.section .h1,
+.section h2,
+.section .h2 {
+  margin-bottom: 12px;
+}
+
+/* Button row that aligns left on desktop and centers on mobile */
+.btn-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .btn-row {
+    justify-content: center;
+  }
+}
+
+/* Card spacing between sections site-wide */
+main.container > .card {
+  margin-bottom: 24px;
+}

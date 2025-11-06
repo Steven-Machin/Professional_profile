@@ -1,15 +1,13 @@
-import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="site-footer">
-      <div className="container footer-inner">
-        <div className="footer-links nav-links">
-          <Link to="/" className="footer-link nav-link">Home</Link>
-          <Link to="/portfolio" className="footer-link nav-link">Portfolio</Link>
-          <Link to="/contact" className="footer-link nav-link">Contact</Link>
-          <Link to="/resume" className="footer-link nav-link">Resume</Link>
+    <footer className="container footer-container">
+      <div className="card section footer-card">
+        <span className="text-muted">Open to Full Stack / Python / JS roles.</span>
+        <div className="btn-row">
+          <a href="mailto:stmachin@gmail.com" className="btn btn-ghost">Email</a>
+          <a href="https://github.com/Steven-Machin" target="_blank" rel="noreferrer" className="btn btn-ghost">GitHub</a>
         </div>
       </div>
     </footer>
