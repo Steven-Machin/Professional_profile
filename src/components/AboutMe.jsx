@@ -1,6 +1,7 @@
 import profilePic from '../../public/images/profile.jpg';
 import './AboutMe.css';
 import MainLayout from './MainLayout';
+import KeyCompetencies from './KeyCompetencies';
 
 const AboutMe = () => {
   return (
@@ -10,7 +11,7 @@ const AboutMe = () => {
         <div className="about-content">
           <img src={profilePic} alt="Profile" className="profile-pic avatar" />
 
-          <div className="about-text">
+        <div className="about-text">
             <p className="tagline text-muted">
               <strong className="headline">Full Stack Developer</strong> &nbsp;|&nbsp; Operational Leader &nbsp;|&nbsp; Problem Solver
             </p>
@@ -22,14 +23,6 @@ const AboutMe = () => {
               detail, and a results-driven mindset to every project. My work is grounded in clean code, thoughtful design, and a
               focus on delivering practical, user-focused solutions.
             </p>
-
-            <h3 className="h3">Key Competencies</h3>
-            <ul>
-              <li>Front-end development with React, Tailwind, and responsive design</li>
-              <li>Back-end APIs using Node.js, Express, and MongoDB</li>
-              <li>Database design and integration (MySQL, Sequelize, Mongoose)</li>
-              <li>Team leadership, agile collaboration, and technical documentation</li>
-            </ul>
 
             <h3 className="h3">Professional Values</h3>
             <ul>
@@ -54,6 +47,7 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
+      <KeyCompetencies />
     </MainLayout>
   );
 };

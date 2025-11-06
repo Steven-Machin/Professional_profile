@@ -1,0 +1,24 @@
+.section {
+  margin-top: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.grid ul {
+  margin: 8px 0 0 18px;
+}
+
+.grid li {
+  margin: 6px 0;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+

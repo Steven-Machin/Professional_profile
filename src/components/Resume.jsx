@@ -1,4 +1,5 @@
 import MainLayout from './MainLayout';
+import KeyCompetencies from './KeyCompetencies';
 
 const Resume = () => {
   return (
@@ -110,6 +111,7 @@ const Resume = () => {
           </li>
         </ul>
       </section>
+      <KeyCompetencies />
     </MainLayout>
   );
 };
