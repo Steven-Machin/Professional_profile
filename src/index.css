@@ -1,124 +1,77 @@
-/* Global Reset and Font Settings */
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-/* Link Styling */
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: none;
-}
-a:hover {
-  color: #535bf2;
-}
-
-/* Layout Anchoring */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #242424;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-/* Root App Wrapper */
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Main Content Area */
 main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 48px;
 }
 
-/* Typography Cleanup */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0.5em 0;
-  font-weight: 600;
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-p {
-  margin: 0.5em 0;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: white;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-#work {
-  padding: 2rem;
-  color: #f0f0f0;
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .project-card {
-  background-color: #1a1a1a;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  text-align: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 600;
+}
+
+.project-card p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .project-img {
   width: 100%;
-  max-height: 180px;
-  object-fit: contain;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  background-color: #fff;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
 }
 
 .project-links {
-  margin-top: 1rem;
+  margin-top: auto;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .project-links a {
-  color: #646cff;
-  font-weight: 500;
-  text-decoration: none;
+  font-weight: 600;
 }
 
-.project-links a:hover {
-  color: #535bf2;
+@media (max-width: 640px) {
+  .container {
+    padding: 20px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
 }

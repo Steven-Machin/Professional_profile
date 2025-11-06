@@ -19,8 +19,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-container">
-      <h2>Contact</h2>
+    <section className="contact-container container card">
+      <h2 className="h2">Contact</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -55,7 +55,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <div className="button-container">
-          <button type="submit">Submit</button>
+          <button type="submit" className="btn btn-primary">Submit</button>
         </div>
       </form>
     </section>

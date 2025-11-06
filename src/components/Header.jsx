@@ -3,13 +3,15 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <header>
-      <nav className="header-nav">
-        <Link to="/" className="header-link">Home</Link>
-        <Link to="/portfolio" className="header-link">Portfolio</Link>
-        <Link to="/contact" className="header-link">Contact</Link>
-        <Link to="/resume" className="header-link">Resume</Link>
-      </nav>
+    <header className="navbar">
+      <div className="navbar-inner">
+        <nav className="header-nav nav-links">
+          <Link to="/" className="header-link nav-link">Home</Link>
+          <Link to="/portfolio" className="header-link nav-link">Portfolio</Link>
+          <Link to="/contact" className="header-link nav-link">Contact</Link>
+          <Link to="/resume" className="header-link nav-link">Resume</Link>
+        </nav>
+      </div>
     </header>
   );
 };

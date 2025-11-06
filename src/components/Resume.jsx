@@ -1,17 +1,17 @@
 const Resume = () => {
   return (
-    <div className="resume">
-      <h2>Steven Machin</h2>
+    <section className="resume container card">
+      <h2 className="h2">Steven Machin</h2>
       <p>Email: <a href="mailto:stmachin@gmail.com">stmachin@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/Steven-Machin" target="_blank" rel="noopener noreferrer">github.com/Steven-Machin</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/steven-machin-751690239" target="_blank" rel="noopener noreferrer">linkedin.com/in/steven-machin-751690239</a></p>
 
-      <h3>Professional Summary</h3>
+      <h3 className="h3">Professional Summary</h3>
       <p>
         Results-driven operations leader and certified Full Stack Developer with over 10 years of experience in youth programming, aquatics operations, and team management. Proven record of leading departmental turnarounds, tracking KPIs, and driving performance improvements. Brings a strong foundation in leadership, safety compliance, and full stack web development using modern frameworks and tools.
       </p>
 
-      <h3>Technical Skills</h3>
+      <h3 className="h3">Technical Skills</h3>
       <ul>
         <li><strong>Languages & Frameworks:</strong> JavaScript (ES6+), Python, Node.js, Express.js, React.js</li>
         <li><strong>Database & ORM:</strong> MySQL, Sequelize, MongoDB, Mongoose</li>
@@ -20,7 +20,7 @@ const Resume = () => {
         <li><strong>Project & Ops Skills:</strong> Financial tracking, KPI reporting, team training, schedule management</li>
       </ul>
 
-      <h3>Work Experience</h3>
+      <h3 className="h3">Work Experience</h3>
       <ul>
         <li>
           <strong>Supervisor, Kids Academy & Aquatics – Life Time</strong><br />
@@ -54,14 +54,14 @@ const Resume = () => {
         </li>
       </ul>
 
-      <h3>Education</h3>
+      <h3 className="h3">Education</h3>
       <ul>
         <li><strong>Full Stack Developer Certificate</strong> – Northwestern University | Jan 2024</li>
         <li><strong>Associate of Arts</strong> – Washtenaw Community College | 2012–2014</li>
         <li><strong>Psychology Studies</strong> – Ashland University | 2010–2012</li>
       </ul>
 
-      <h3>Projects</h3>
+      <h3 className="h3">Projects</h3>
       <ul>
         <li>
           <strong>Movies and Mocktails</strong> – A full stack app pairing movies with custom drink recipes<br />
@@ -76,7 +76,7 @@ const Resume = () => {
           <a href="https://steven-machin.github.io/workday_scheduler/" target="_blank" rel="noopener noreferrer">Live Site</a>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 

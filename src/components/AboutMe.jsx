@@ -3,13 +3,13 @@ import './AboutMe.css';
 
 const AboutMe = () => {
   return (
-    <div className="about-container">
-      <h2>About Me</h2>
+    <section className="about-container container card">
+      <h2 className="h2">About Me</h2>
       <div className="about-content">
-        <img src={profilePic} alt="Profile" className="profile-pic" />
+        <img src={profilePic} alt="Profile" className="profile-pic avatar" />
 
         <div className="about-text">
-          <p className="tagline">
+          <p className="tagline text-muted">
             <strong className="headline">Full Stack Developer</strong> &nbsp;•&nbsp; Operational Leader &nbsp;•&nbsp; Problem Solver
           </p>
 
@@ -21,7 +21,7 @@ const AboutMe = () => {
             focus on delivering practical, user-focused solutions.
           </p>
 
-          <h3>Key Competencies</h3>
+          <h3 className="h3">Key Competencies</h3>
           <ul>
             <li>Front-end development with React, Tailwind, and responsive design</li>
             <li>Back-end APIs using Node.js, Express, and MongoDB</li>
@@ -29,7 +29,7 @@ const AboutMe = () => {
             <li>Team leadership, agile collaboration, and technical documentation</li>
           </ul>
 
-          <h3>Professional Values</h3>
+          <h3 className="h3">Professional Values</h3>
           <ul>
             <li>Maintainable, well-documented code</li>
             <li>Accessible, user-first design</li>
@@ -38,13 +38,13 @@ const AboutMe = () => {
           </ul>
 
           <div className="about-links">
-            <a href="https://github.com/Steven-Machin" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="mailto:stmachin@gmail.com">Email</a>
+            <a href="https://github.com/Steven-Machin" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">GitHub</a>
+            <a href="mailto:stmachin@gmail.com" className="btn btn-ghost">Email</a>
             <a
               href="/files/Steven_Machin_Resume_Final.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="resume-download"
+              className="resume-download btn btn-primary"
             >
               Download Resume
             </a>
@@ -52,7 +52,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

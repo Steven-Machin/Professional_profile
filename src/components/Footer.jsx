@@ -3,12 +3,14 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer-links">
-        <Link to="/" className="footer-link">Home</Link>
-        <Link to="/portfolio" className="footer-link">Portfolio</Link>
-        <Link to="/contact" className="footer-link">Contact</Link>
-        <Link to="/resume" className="footer-link">Resume</Link>
+    <footer className="site-footer">
+      <div className="container footer-inner">
+        <div className="footer-links nav-links">
+          <Link to="/" className="footer-link nav-link">Home</Link>
+          <Link to="/portfolio" className="footer-link nav-link">Portfolio</Link>
+          <Link to="/contact" className="footer-link nav-link">Contact</Link>
+          <Link to="/resume" className="footer-link nav-link">Resume</Link>
+        </div>
       </div>
     </footer>
   );
